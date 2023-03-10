@@ -32,6 +32,10 @@
     display: block;
     font-family: "Roboto";
     font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .MemInput{
     display: none;
@@ -43,11 +47,22 @@
     max-height: 0;
     transition: 0.3s;
 }
+.MemLablel>div{
+    background-image: url('./img/noacives.png');
+    width: 1.5em;
+    height: 1.5em;
+    background-repeat: no-repeat;
+}
 
 .MemInput:checked ~ .MemContent{
     transform: scale(1);
-    max-height: 500px;
+    max-height: 100em;
 }
+
+.MemInput:checked ~ .MemLablel>div{
+    background-image: url('./img/actives.png');
+}
+
 .MemContainer:hover>.MemContent{
     transform: scale(1);
     max-height: 100em;
