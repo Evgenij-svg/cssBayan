@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.cssBayan{
+    margin: auto;
+    display: flex;
+    width: 31em;
+    justify-content: center;
+    flex-direction: column;
+}
+.Mem1{
+    border-top: 0.1em solid black;
+    border-bottom: 0.1em solid black;
+    padding: 3% 0;
+}
+.Mem2{
+    border-bottom: 0.1em solid black;
+    padding: 3% 0;
+}
+
+.Mem3{
+    border-bottom: 0.1em solid black;
+    padding: 3% 0;
+}
+.Mem4{
+    border-bottom: 0.1em solid black;
+    padding: 3% 0;
+}
+
+.MemLablel{
+    width: 100%;
+    display: block;
+    font-family: "Roboto";
+    font-size: 1.3em;
+}
+.MemInput{
+    display: none;
+
+}
+.MemContent{
+    overflow: hidden;
+    transform: scale(0);
+    max-height: 0;
+    transition: 0.3s;
+}
+
+.MemInput:checked ~ .MemContent{
+    transform: scale(1);
+    max-height: 500px;
+}
+.MemContainer:hover>.MemContent{
+    transform: scale(1);
+    max-height: 100em;
+}
+
+
